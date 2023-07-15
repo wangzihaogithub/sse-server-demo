@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wangzihaogithub</groupId>
+    <artifactId>demo2-tomcat-server2</artifactId>
+    <version>1.0.0</version>
+    <name>demo2-tomcat-server2</name>
+    <description>demo2-tomcat-server2</description>
+    <properties>
+        <java.version>1.8</java.version>
+        <springboot.version>2.3.12.RELEASE</springboot.version>
+        <!-- 如果需要集群 配置spring.sse-server.remote.enabled = true, 需要导入nacos依赖 -->
+        <nacos-client.version>2.1.2</nacos-client.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.wangzihaogithub</groupId>
+            <artifactId>sse-server</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
+        <!-- 如果需要集群 配置spring.sse-server.remote.enabled = true, 需要导入nacos依赖 -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>${nacos-client.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

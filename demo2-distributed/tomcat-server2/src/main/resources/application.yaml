@@ -1,0 +1,9 @@
+server:
+  port: 8081
+spring:
+  sse-server:
+    remote:
+      enabled: true
+      nacos:
+        service-name: 'demo2-distributed'
+        server-addr: '10.0.65.98'
