@@ -8,7 +8,7 @@
     <dependency>
         <groupId>com.github.wangzihaogithub</groupId>
         <artifactId>sse-server</artifactId>
-        <version>RELEASE</version>
+        <version>1.2.13</version>
     </dependency>
 
 ### 包介绍
@@ -17,11 +17,11 @@
 访问http://127.0.0.1:8080
 可以看到这样的消息，您可以进行交互测试
 
-    ID:184320 connect-finish {"connectionId":"184320","serverTime":1689412819469,"reconnectTime":5000,"name":"defaultConnectionService","enableCluster":false,"version":"1.2.8"} :
+    ID:184320 connect-finish {"connectionId":"184320","serverTime":1689412819469,"reconnectTime":5000,"name":"defaultConnectionService","enableCluster":false,"version":"1.2.13"} :
     ID:184320 server-push {"name":"sendByUserId 服务端推送的"} :
     ID:184320 server-push {"name":"sendByUserId 服务端推送的"} :
     ID:184320 connect-close {"connectionId": "184320"}. whoTriggerClose=client :
-    ID:847140540416 connect-finish {"connectionId":"847140540416","serverTime":1689413021434,"reconnectTime":5000,"name":"defaultConnectionService","enableCluster":false,"version":"1.2.8"} :
+    ID:847140540416 connect-finish {"connectionId":"847140540416","serverTime":1689413021434,"reconnectTime":5000,"name":"defaultConnectionService","enableCluster":false,"version":"1.2.13"} :
     ID:847140540416 server-push {"name":"sendByUserId 服务端推送的"} :
     ID:847140540416 server-push {"name":"sendByUserId 服务端推送的"} :
 
@@ -35,7 +35,7 @@
 访问http://127.0.0.1:8080，http://127.0.0.1:8081
 可以看到这样的消息，您可以进行交互测试
 
-    ID:21468848128 connect-finish {"connectionId":"21468848128","serverTime":1689413086483,"reconnectTime":5000,"name":"defaultConnectionService","enableCluster":true,"version":"1.2.8"} :
+    ID:21468848128 connect-finish {"connectionId":"21468848128","serverTime":1689413086483,"reconnectTime":5000,"name":"defaultConnectionService","enableCluster":true,"version":"1.2.13"} :
     ID:21468848128 server-push {"name":"sendByUserId dubbo2号推送的"} :
     ID:21468848128 server-push {"name":"sendByUserId dubbo1号推送的"} :
     ID:21468848128 server-push {"name":"sendByUserId dubbo2号推送的"} :

@@ -3,7 +3,13 @@ server:
 spring:
   sse-server:
     remote:
+      discovery: nacos
+#      discovery: redis
       enabled: true
       nacos:
         service-name: 'demo2-distributed'
         server-addr: '10.0.65.98'
+#  redis:
+#    host: '10.64.74.1:6479'
+#    cluster:
+#      nodes: '10.64.74.1:6479,10.64.74.109:6479'
